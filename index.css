@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+
+
+body{
+    font-size: 15px;
+    background-color: var(--VeryDarkBlue);
+    color: white;
+    font-family: "Overpass" , sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.card{
+    border-radius: 0.625rem;
+    margin: 1.2rem;
+    padding: 1.5rem;
+    background-image:linear-gradient(var(--DarkBlue),hsl(216, 12%, 8%));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--DarkBlue);
+    height: 40px;
+    width: 40px;
+    
+}
+.how{
+    font-size: 35px;
+    font-weight:700 ;
+}
+.content{
+    font-size: 15px;
+    width: 330px;
+    text-align: left;
+    color: var(--LightGrey);
+}
+.ratings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.ratings span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:var(--DarkBlue);
+    width: 50px;
+    height: 50px;
+    color: var(--LightGrey);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--LightGrey);
+    color: white;
+}
+.btn:focus{
+    background-color: var(--Orange);
+}
+
+
+.submit{
+    margin-left: 15px;
+    border-radius: 30px;
+    width: 300px;
+    height: 30px;
+    background-color: var(--Orange);
+    color: white;
+    text-transform: uppercase;
+    border: 0px;
+    transition: 0.3s;
+}
+.submit:hover{
+    background-color: aliceblue;
+    cursor: pointer;
+    color:var(--Orange)
+}
+.ratin{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+
+
+
+
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:linear-gradient(var(--DarkBlue),hsl(216, 12%, 8%));
+    padding: 1.5rem;
+    margin: 1.2rem;
+    border-radius: 0.625rem;
+    gap: 10px;
+}
+.rate{
+    background: var(--DarkBlue);
+    width: 200px;
+    border-radius: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Orange);
+}
+.thanks{
+    font-size: 30px;
+    font-weight: 700;
+}
+.thankscontent{
+    font-size: 15px;
+    color: var(--LightGrey);
+    width: 340px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
